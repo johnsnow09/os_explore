@@ -57,7 +57,7 @@ with header_mid:
 
 st.write("Installing Java")
 
-import rpm
+import rpmfile
 import subprocess
 package_path = '/mount/src/os_explore/jdk-11.0.2_linux-x64_bin.rpm'
 # command = ['rpm', '-Ivh', package_path]
