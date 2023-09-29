@@ -40,10 +40,9 @@ with header_mid:
 ############################## HEADER DONE ##############################
 
 
-if "jdk-11_linux-x64_bin.tar.gz" in os.listdir():
-  st.write("Java file exist")
-  
-else: 
+if "jdk-11_linux-x64_bin.tar.gz" not in os.listdir():
+  st.write("Checking execution steps")
+
   ####################### Java installation #######################
   #Name of tarfile (without the .tar.gz extension)
   file_name = "jdk-11_linux-x64_bin"
@@ -58,4 +57,7 @@ else:
   #Move the tar files into your target folder
   os.system("mv " + file_name + " " + target_dir)
 
+else: 
+  st.write("Java file already exist")
+  
 #st.write(os.listdir())
