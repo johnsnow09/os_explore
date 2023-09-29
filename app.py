@@ -79,8 +79,9 @@ st.write("Installing Java")
 
 #st.write("Ending execution steps")
 
-os.remove("jdk-11_linux-x64_bin.tar.gz")
-#os.remove("jdk-11_linux-x64_bin.tar (1).gz")
+if os.path.exists("jdk-11_linux-x64_bin.tar.gz") == True:
+  os.remove("jdk-11_linux-x64_bin.tar.gz")
+  #os.remove("jdk-11_linux-x64_bin.tar (1).gz")
 
 
 st.write(os.listdir())
