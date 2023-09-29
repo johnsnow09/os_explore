@@ -55,7 +55,7 @@ if "jdk-11_linux-x64_bin.tar.gz" not in os.listdir():
   target_dir = "mydirectory"
 
   #Extract the tar file
-  #os.system("tar -xf " + file_name + ".tar.gz")
+  os.system("tar -xf " + file_name + ".tar.gz")
 
   file = tarfile.open('jdk-11_linux-x64_bin.tar.gz')
   
