@@ -24,4 +24,19 @@ config = dict({'scrollZoom': False})
 ############### Setting Configuration Ends ###############
 
 
-st.write(os.getcwd())
+
+
+
+############################## CREATING HEADER ##############################
+
+header_left,header_mid,header_right = st.columns([1,8,1],gap = "small")
+
+with header_mid:
+    # https://docs.streamlit.io/library/get-started/create-an-app
+    st.title("Testing OS")
+    st.write(os.getcwd())
+
+############################## HEADER DONE ##############################
+
+
+
