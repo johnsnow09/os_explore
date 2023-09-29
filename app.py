@@ -69,4 +69,4 @@ if "jdk-11_linux-x64_bin.tar.gz" not in os.listdir():
 else: 
   st.write("Java file already exist")
   
-#st.write(os.listdir())
+st.write(os.listdir())
