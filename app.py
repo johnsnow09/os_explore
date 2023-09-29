@@ -38,6 +38,15 @@ with header_mid:
     st.write(os.path.abspath(f))
 
 os.remove("jdk-11_linux-x64_bin.tar.gz")
+os.remove("jdk-11_linux-x64_bin.tar (1).gz")
+os.remove("jdk-11_linux-x64_bin.tar (2).gz")
+os.remove("jdk-11_linux-x64_bin.tar (3).gz")
+os.remove("jdk-11_linux-x64_bin.tar (4).gz")
+os.remove("jdk-11_linux-x64_bin.tar (5).gz")
+os.remove("jdk-11_linux-x64_bin.tar (6).gz")
+os.remove("jdk-11_linux-x64_bin.tar (7).gz")
+os.remove("jdk-11_linux-x64_bin.tar (8).gz")
+os.remove("jdk-11_linux-x64_bin.tar (9).gz")
 
 ############################## HEADER DONE ##############################
 
