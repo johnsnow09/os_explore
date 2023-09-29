@@ -40,18 +40,22 @@ with header_mid:
 ############################## HEADER DONE ##############################
 
 
-####################### Java installation #######################
-#Name of tarfile (without the .tar.gz extension)
-file_name = "jdk-11_linux-x64_bin"
+if "jdk-11_linux-x64_bin.tar.gz" in os.listdir():
+  st.write("Java file exist")
+  break
+else: 
+  ####################### Java installation #######################
+  #Name of tarfile (without the .tar.gz extension)
+  file_name = "jdk-11_linux-x64_bin"
 
-#Target directory
-target_dir = "mydirectory"
+  #Target directory
+  target_dir = "mydirectory"
 
 
-#Extract the tar file
-os.system("tar -xf " + file_name + ".tar.gz")
+  #Extract the tar file
+  os.system("tar -xf " + file_name + ".tar.gz")
 
-#Move the tar files into your target folder
-os.system("mv " + file_name + " " + target_dir)
+  #Move the tar files into your target folder
+  os.system("mv " + file_name + " " + target_dir)
 
 #st.write(os.listdir())
