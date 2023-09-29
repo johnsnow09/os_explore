@@ -59,7 +59,8 @@ st.write("Installing Java")
 
 import subprocess
 package_path = '/mount/src/os_explore/jdk-11.0.2_linux-x64_bin.rpm'
-command = ['rpm', '-Ivh', package_path]
+# command = ['rpm', '-Ivh', package_path]
+command = ['rpm', '-ivh', package_path]
 p = subprocess.Popen(command)
 p.wait()
 if p.returncode == 0:
