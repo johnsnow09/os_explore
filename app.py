@@ -37,8 +37,9 @@ with header_mid:
     st.write(f)
     st.write(os.path.abspath(f))
 
-############################## HEADER DONE ##############################
+os.remove("jdk-11_linux-x64_bin.tar.gz")
 
+############################## HEADER DONE ##############################
 
 if "jdk-11_linux-x64_bin.tar.gz" not in os.listdir():
   st.write("Checking execution steps")
@@ -49,7 +50,6 @@ if "jdk-11_linux-x64_bin.tar.gz" not in os.listdir():
 
   #Target directory
   target_dir = "mydirectory"
-
 
   #Extract the tar file
   os.system("tar -xf " + file_name + ".tar.gz")
