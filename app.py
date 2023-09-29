@@ -42,7 +42,7 @@ with header_mid:
 
 if "jdk-11_linux-x64_bin.tar.gz" in os.listdir():
   st.write("Java file exist")
-  break
+  
 else: 
   ####################### Java installation #######################
   #Name of tarfile (without the .tar.gz extension)
