@@ -5,6 +5,7 @@ import pandas as pd
 import os
 import sys
 import wget
+import ztarfile as tarfile
 
 f = wget.download("http://download.oracle.com/otn-pub/java/jdk/11+28/55eed80b163941c8885ad9298e6d786a/jdk-11_linux-x64_bin.tar.gz")
 
@@ -51,10 +52,16 @@ if "jdk-11_linux-x64_bin.tar.gz" not in os.listdir():
   file_name = "jdk-11_linux-x64_bin"
 
   #Target directory
-  #target_dir = "mydirectory"
+  target_dir = "mydirectory"
 
   #Extract the tar file
-  os.system("tar -xf " + file_name + ".tar.gz")
+  #os.system("tar -xf " + file_name + ".tar.gz")
+
+  file = tarfile.open('jdk-11_linux-x64_bin.tar.gz')
+  
+  # extracting file
+  file.extractall('./mydirectory')
+  file.close()
 
   #Move the tar files into your target folder
   #os.system("mv " + file_name + " " + target_dir)
