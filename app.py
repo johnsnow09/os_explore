@@ -34,10 +34,6 @@ if "jdk-11.0.2_linux-x64_bin.rpm" not in os.listdir():
 
 else: 
   st.write("Java file already exist")
-  
-#print("Current Directory: ",os.getcwd())
-#print("Directory list: ",os.listdir())
-
 
 
 ############################## CREATING HEADER ##############################
@@ -59,9 +55,8 @@ with header_mid:
 ############################## HEADER DONE ##############################
 
 
-
-  ####################### Java installation tar.gzp file #######################
 st.write("Installing Java")
+  ####################### Java installation tar.gzp file #######################
 
 #Name of tarfile (without the .tar.gz extension)
 #file_name = "jdk-11_linux-x64_bin"
@@ -87,5 +82,6 @@ if os.path.exists("jdk-11_linux-x64_bin.tar.gz") == True:
   os.remove("jdk-11_linux-x64_bin.tar.gz")
   #os.remove("jdk-11_linux-x64_bin.tar (1).gz")
 
+  ####################### Java installation tar.gzp file #######################
 
 st.write(os.listdir())
