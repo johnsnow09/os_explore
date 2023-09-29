@@ -24,12 +24,13 @@ config = dict({'scrollZoom': False})
 if "jdk-11_linux-x64_bin.tar.gz" not in os.listdir():
   st.write("Starting downloading Java & execution steps")
   f = wget.download("http://download.oracle.com/otn-pub/java/jdk/11+28/55eed80b163941c8885ad9298e6d786a/jdk-11_linux-x64_bin.tar.gz")
+  st.write(" Java Downloaded")
 
 else: 
   st.write("Java file already exist")
   
-print(os.getcwd())
-print(os.listdir())
+print("Current Directory: ",os.getcwd())
+print("Directory list: ",os.listdir())
 
 
 
@@ -51,6 +52,8 @@ with header_mid:
 
 
   ####################### Java installation #######################
+st.write("Installing Java")
+
 #Name of tarfile (without the .tar.gz extension)
 file_name = "jdk-11_linux-x64_bin"
 
