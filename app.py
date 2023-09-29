@@ -49,7 +49,7 @@ with header_mid:
     st.title("Testing OS")
   
     # https://stackoverflow.com/questions/59478429/downloading-and-installing-a-program-using-python
-    st.title("Checking platform: ",platform.system())
+    st.write("Checking platform: ",platform.system())
   
     st.write("Current Directory: ",os.getcwd())
     st.write("Directory list: ",os.listdir())
