@@ -36,6 +36,8 @@ with header_mid:
     st.title("Testing OS")
     st.write(os.getcwd())
 
+    st.write(os.listdir())
+
 ############################## HEADER DONE ##############################
 
 
