@@ -5,13 +5,13 @@ import pandas as pd
 import os
 import sys
 import wget
-import tarfile
+# import tarfile
 import platform
 
 
 ############### Setting Configuration ###############
 
-st.set_page_config(page_title="Political Parties Crime Record Analysis",
+st.set_page_config(page_title="OS Java install",
                     layout='wide',
                     initial_sidebar_state="expanded")
 
