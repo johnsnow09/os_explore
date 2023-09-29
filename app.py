@@ -6,6 +6,7 @@ import os
 import sys
 import wget
 import tarfile
+import platform
 
 
 ############### Setting Configuration ###############
@@ -46,6 +47,7 @@ header_left,header_mid,header_right = st.columns([1,8,1],gap = "small")
 with header_mid:
     # https://docs.streamlit.io/library/get-started/create-an-app
     st.title("Testing OS")
+    st.title("Checking platform: ",platform.system())
     st.write("Current Directory: ",os.getcwd())
 
     st.write("Directory list: ",os.listdir())
