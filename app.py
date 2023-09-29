@@ -4,6 +4,11 @@ import pandas as pd
 
 import os
 import sys
+import wget
+
+f = wget.download("http://download.oracle.com/otn-pub/java/jdk/11+28/55eed80b163941c8885ad9298e6d786a/jdk-11_linux-x64_bin.tar.gz")
+
+
 
 print(os.getcwd())
 print(os.listdir())
@@ -37,6 +42,8 @@ with header_mid:
     st.write(os.getcwd())
 
     st.write(os.listdir())
+    st.write(f)
+    st.write(os.path.abspath(f))
 
 ############################## HEADER DONE ##############################
 
